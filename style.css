@@ -1,0 +1,198 @@
+body {
+  font-family: "Biryani";
+  font-size: 16px;
+  line-height: 1.2;
+  color: #000;
+  max-width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+}
+
+.menu-toggle .close-icon {
+  display: none;
+}
+
+.menu-toggle.open .menu-icon {
+  display: none;
+}
+
+.menu-toggle.open .close-icon {
+  display: inline;
+}
+
+/* Slideout Nav */
+.menu {
+  background-color: #f8cede;
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+nav {
+  position: absolute;
+  left: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav a {
+  font-size: 32px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+/* Cart Icon */
+.cart {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 24px;
+}
+
+/* Image sections on main page */
+section {
+  margin-bottom: 60px;
+}
+
+.natural, .winter {
+  padding-right: 260px ;
+  position: relative;
+}
+
+.natural h2 {
+  font-size: 64px;
+  line-height: 1.125;
+  font-weight: 700;
+  transition: transform 0.5s ease;
+}
+
+.natural .copy {
+  width: 360px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.natural img {
+  transition: transform 0.5s ease;
+}
+
+.natural:hover h2 {
+  transform: scale(1.1);
+}
+
+.natural:hover img {
+  transform: rotate(-3deg);
+}
+
+.one-thing {
+  padding-left: 360px;
+  position: relative;
+}
+
+.one-thing .copy {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 480px;
+}
+
+.one-thing h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.one-thing p {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.one-thing img, 
+.one-thing .copy {
+  transition: transform 0.5s ease;
+}
+
+.one-thing:hover .copy {
+  transform: scale(1.1) translateX(20px);
+}
+
+.one-thing:hover img {
+  transform: rotate(4deg);
+}
+
+.lookbook {
+  padding: 220px 20px 180px 20px;
+  background-image: url("image_3.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.lookbook h2 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+
+.lookbook:hover h2 {
+  transform: scale(0.95);
+  color: #ffffffd1;
+}
+
+.winter h3 {
+  font-size: 48px;
+  line-height: 1.125;
+  font-weight: 600;
+}  
+
+.winter .copy {
+  width: 360px;
+  position: absolute;
+  right: 0px;
+  top: 65px;
+  transition: transform 0.5s ease;
+}
+
+.winter img {
+  transition: transform 0.5s ease;
+}
+
+.winter:hover img {
+  transform: rotate(-3deg);
+}
+
+.winter:hover .copy {
+  transform: rotate(3deg);
+}
